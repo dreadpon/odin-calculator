@@ -97,7 +97,7 @@ let eraseEquation = function () {
 	if (lastObject != null) {
 		if (lastObject.type === 'number') {
 			lastObject.val = lastObject.val.substring(0, lastObject.val.length - 1);
-			if (lastObject.val.length <= 0) {
+			if (equation.length === 1 && lastObject.val.length <= 0) {
 				lastObject.val = '0';
 			}
 		}

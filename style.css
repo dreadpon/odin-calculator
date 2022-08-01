@@ -208,7 +208,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	z-index: -1;
-	background-color: black;
+	background-color: white;
 	opacity: 0;
 
 	transition: 1s all;
@@ -216,6 +216,7 @@ body {
 
 .zero-container.active {
 	opacity: 1;
+	background-color: blackwhite;
 }
 
 #zero {
