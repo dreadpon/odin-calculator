@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="calculator-wrapper">
+		<div class="calculator-container">
+			<div class="calculator-button-wrapper calculator-subtitle">
+				<button class="calculator-button"><a href="https://github.com/dreadpon/" target="_blank">by Dreadpon</a></button></a>
+			</div>
+			<div class="calculator-screen">
+				<span></span>
+			</div>
+			<div class="calculator-buttons">
+				<div class="calculator-button-wrapper single number">
+					<button id="number-7" class="calculator-button">7</button>
+				</div>
+				<div class="calculator-button-wrapper single number">
+					<button id="number-8" class="calculator-button">8</button>
+				</div>
+				<div class="calculator-button-wrapper single number">
+					<button id="number-9" class="calculator-button">9</button>
+				</div>
+				<div class="calculator-button-wrapper single action">
+					<button  id="action-division"class="calculator-button">÷</button>
+				</div>
+				<div class="calculator-button-wrapper single action backspace">
+					<button id="action-backspace" class="calculator-button">⌫</button>
+				</div>
+				<div class="calculator-button-wrapper single number">
+					<button id="number-4" class="calculator-button">4</button>
+				</div>
+				<div class="calculator-button-wrapper single number">
+					<button id="number-5" class="calculator-button">5</button>
+				</div>
+				<div class="calculator-button-wrapper single number">
+					<button id="number-6" class="calculator-button">6</button>
+				</div>
+				<div class="calculator-button-wrapper single action">
+					<button id="action-multiplication" class="calculator-button">×</button>
+				</div>
+				<div class="calculator-button-wrapper single action clear">
+					<button id="action-clear" class="calculator-button">C</button>
+				</div>
+				<div class="calculator-button-wrapper single number">
+					<button id="number-1" class="calculator-button">1</button>
+				</div>
+				<div class="calculator-button-wrapper single number">
+					<button id="number-2" class="calculator-button">2</button>
+				</div>
+				<div class="calculator-button-wrapper single number">
+					<button id="number-3" class="calculator-button">3</button>
+				</div>
+				<div class="calculator-button-wrapper single action">
+					<button id="action-subtraction" class="calculator-button">-</button>
+				</div>
+				<div class="calculator-button-wrapper single misc">
+					<button id="misc-negate" class="calculator-button">-</button>
+				</div>
+				<div class="calculator-button-wrapper single number">
+					<button id="number-0" class="calculator-button">0</button>
+				</div>
+				<div class="calculator-button-wrapper single misc">
+					<button id="misc-float" class="calculator-button">,</button>
+				</div>
+				<div class="calculator-button-wrapper single action">
+					<button id="action-addition" class="calculator-button">+</button>
+				</div>
+				<div class="calculator-button-wrapper double-vert action eval">
+					<button id="action-eval" class="calculator-button">=</button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<audio id="nice" src="assets/nice.mp3"></audio>
+	<div class="zero-container">
+		<video id="zero" width="640" height="480">
+			<source src="assets/zero.mp4" type="video/mp4">
+		</video>
+	</div>
+	<script src="main.js" defer></script>
+</body>
+</html>
