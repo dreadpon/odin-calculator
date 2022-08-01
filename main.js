@@ -243,6 +243,68 @@ let clickedMisc = function (misc) {
 }
 
 
+let keyDown = function (e) {
+	console.log(e.key);
+	switch (e.key) {
+		case '0':
+		case '1':
+		case '2':
+		case '3':
+		case '4':
+		case '5':
+		case '6':
+		case '7':
+		case '8':
+		case '9': {
+			clickedNumber(e.key);
+			break;
+		}
+		case '+': {
+			clickedAction('addition');
+			break;
+		}
+		case '-': {
+			clickedAction('subtraction');
+			break;
+		}
+		case '*': {
+			clickedAction('multiplication');
+			break;
+		}
+		case '/': {
+			clickedAction('division');
+			break;
+		}
+		case 'Backspace':
+		case 'Delete': {
+			clickedAction('backspace');
+			break;
+		}
+		case 'Escape':
+		case 'c':
+		case 'C': {
+			clickedAction('clear');
+			break;
+		}
+		case '+':
+		case 'Enter': {
+			clickedAction('eval');
+			break;
+		}
+		case '~':
+		case '_': {
+			clickedMisc('negate');
+			break;
+		}
+		case '.':
+		case ',': {
+			clickedMisc('float');
+			break;
+		}
+	}
+}
+
+
 
 
 let calculator_screen = document.querySelector('.calculator-screen > span');
@@ -251,6 +313,8 @@ let zeroEl = document.querySelector("#zero");
 let calculator_wrapper = document.querySelector('.calculator-wrapper');
 
 zeroEl.addEventListener('ended', stopZero);
+
+window.addEventListener('keydown', keyDown);
 
 document.querySelector("#number-0").addEventListener('click', clickedNumber.bind(this, '0'));
 document.querySelector("#number-1").addEventListener('click', clickedNumber.bind(this, '1'));
